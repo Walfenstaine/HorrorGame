@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 85973ba4c2d1dcb48ad85162be44122e
+timeCreated: 1670213200
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PF Libera Pro
+  fontNames:
+  - PF Libera Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

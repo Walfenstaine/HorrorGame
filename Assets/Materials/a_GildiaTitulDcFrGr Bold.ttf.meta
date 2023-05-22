@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7fe35cadb9a3aed4d85ac77811c51c08
+timeCreated: 1670213200
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: a_GildiaTitulDcFrGr
+  fontNames:
+  - a_GildiaTitulDcFrGr
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
