@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Elschid : MonoBehaviour {
-	public float timer = 3;
 	public string masage;
 	public string worning;
 	public Riscag cranc;
@@ -39,13 +38,9 @@ public class Elschid : MonoBehaviour {
 					Destroy (GameObject.Find (names [i]));
 				}
 				if (cranc.oKay) {
-					SubTitres.rid.image.enabled = true;
-					SubTitres.rid.not = masage;
-					SubTitres.rid.tim = timer;
+                    SubtTitres.regit.subtitres = masage;
 				} else {
-					SubTitres.rid.image.enabled = true;
-					SubTitres.rid.not = worning;
-					SubTitres.rid.tim = timer;
+                    SubtTitres.regit.subtitres = worning;
 				}
 			}
 		}

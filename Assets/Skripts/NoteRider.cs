@@ -9,9 +9,10 @@ public class NoteRider : MonoBehaviour {
 	public bool activate{ get; set; }
 	public string not{ get; set; }
 	public static NoteRider regit {get; set;}
-
+    private Interface iF;
 	void Awake(){
-		if (regit == null) {
+        iF = Interface.rid;
+        if (regit == null) {
 			regit = this;
 		} else {
 			Destroy (this);
@@ -22,8 +23,8 @@ public class NoteRider : MonoBehaviour {
 	}
 	public void Deleyted(){
 		activate = false;
-		Cursor_Event.regit.curActiv = false;
-	}
+        iF.CursorOff();
+    }
 	public void Closed(){
 		activate = false;
 	}

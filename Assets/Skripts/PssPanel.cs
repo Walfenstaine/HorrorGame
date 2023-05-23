@@ -13,9 +13,9 @@ public class PssPanel : MonoBehaviour {
 	public int not{ get; set; }
 	public bool activ{ get; set; }
 	public static PssPanel rec {get; set;}
-	private float timer;
-
+    private Interface iF;
 	void Awake(){
+        iF = Interface.rid;
 		if (rec == null) {
 			rec = this;
 		} else {
@@ -35,16 +35,16 @@ public class PssPanel : MonoBehaviour {
 			if (not == password) {
 				not = 0;
 				activ = false;
-				SoundMaster.regit.clip = ok;
-				SubTitres.rid.image.enabled = true;
-				SubTitres.rid.not = okay;
+                iF.CursorOn();
+                SoundPlayer.regit.sorse.PlayOneShot(ok);
+                SubtTitres.regit.subtitres = okay;
 				door.locked = false;
 			} else {
 				if (not != 0) {
 					activ = false;
-					SoundMaster.regit.clip = coll;
-					SubTitres.rid.image.enabled = true;
-					SubTitres.rid.not = masage;
+                    iF.CursorOn();
+                    SoundPlayer.regit.sorse.PlayOneShot(coll);
+                    SubtTitres.regit.subtitres = masage;
 				}
 			}
 		} else {
@@ -57,7 +57,7 @@ public class PssPanel : MonoBehaviour {
 
 		if (sensor.activate) {
 			activate.Invoke ();
-			Cursor_Event.regit.curActiv = true;
+            iF.CursorOff();
 			activ = true;
 		} else {
 			return;

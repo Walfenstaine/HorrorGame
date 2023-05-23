@@ -18,7 +18,7 @@ public class Footsteps : MonoBehaviour {
 			timer = 0;
 		}
 		if (timer > 3) {
-			SoundMaster.regit.clip = clip;
+            SoundPlayer.regit.sorse.PlayOneShot(clip);
 			timer = 0;
 		}
 	}

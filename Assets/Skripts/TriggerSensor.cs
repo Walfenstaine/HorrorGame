@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TriggerSensor : MonoBehaviour {
-	public float timer = 3;
 	public Sprite sprite;
 	public Image loot, vesch;
 	public string masage;
@@ -32,13 +31,11 @@ public class TriggerSensor : MonoBehaviour {
 				activate = true;
 				activ = false;
 				if (masage != null) {
-					SubTitres.rid.tim = timer;
-					SubTitres.rid.image.enabled = true;
-					SubTitres.rid.not = masage;
+                    SubtTitres.regit.subtitres = masage;
 				}
 				if (clip != null) {
-					SoundMaster.regit.clip = clip;
-				}
+                    SoundPlayer.regit.sorse.PlayOneShot(clip);
+                }
 			}
 		} else {
 			activate = false;

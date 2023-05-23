@@ -30,8 +30,8 @@ public class Riscag : MonoBehaviour {
 			} else {
 				ps.Play ();
 				mechanizm.SetActive (true);
-				SoundMaster.regit.clip = clip;
-				activate = false;
+                SoundPlayer.regit.sorse.PlayOneShot(clip);
+                activate = false;
 				Destroy (sensor.gameObject,1);
 			}
 		}

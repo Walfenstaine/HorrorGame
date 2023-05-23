@@ -10,10 +10,14 @@ public class Passworder : MonoBehaviour {
 	public Button[] butt;
 	public Text displayText;
 	public GameObject panel;
+    private Interface iF;
 
-	public void Activate(){
+    private void Start()
+    {
+        iF = Interface.rid;
+    }
+    public void Activate(){
 		panel.SetActive (true);
-		Cursor_Event.regit.curActiv = true;
 	}
 	public void DeActivate(){
 		panel.SetActive (false);
@@ -23,16 +27,16 @@ public class Passworder : MonoBehaviour {
 
 	void Deselect(){
 		if (PssPanel.rec.activ) {
-			Cursor_Event.regit.curActiv = false;
-		}
+            iF.CursorOn();
+        }
 		PssPanel.rec.activ = false;
 		number = 0;
 		displayText.text = "";
 	}
 	void Select(){
 		if (PssPanel.rec.activ) {
-			Cursor_Event.regit.curActiv = false;
-		}
+            iF.CursorOn();
+        }
 		PssPanel.rec.not = number;
 		if (PssPanel.rec.not == 0) {
 			PssPanel.rec.activ = false;

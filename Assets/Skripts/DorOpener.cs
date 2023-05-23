@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DorOpener : MonoBehaviour {
-	public float timer = 3;
 	public string masage;
 	public string masageClose;
 	public GameObject kay;
@@ -25,16 +24,13 @@ public class DorOpener : MonoBehaviour {
 					kay.SetActive (true);
 				}
 				open = true;
-				SubTitres.rid.image.enabled = true;
-				SubTitres.rid.not = masage;
-				SubTitres.rid.tim = timer;
-				SoundMaster.regit.clip = clips [0];
+                SubtTitres.regit.subtitres = masage;
+				SoundPlayer.regit.sorse.PlayOneShot(clips[0]);
 				Destroy (this,1);
 				Destroy (GetComponent<BoxCollider>(),1);
 			} else {
-				SoundMaster.regit.clip = clips [1];
-				SubTitres.rid.image.enabled = true;
-				SubTitres.rid.not = masageClose;
+                SoundPlayer.regit.sorse.PlayOneShot(clips[1]);
+                SubtTitres.regit.subtitres = masageClose;
 			}
 		}
 	}
