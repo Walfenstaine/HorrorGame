@@ -147,7 +147,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020929997178198}
-  m_Mesh: {fileID: 4300018, guid: e8728c5b7f0eb95428f9d2133d1e3b62, type: 3}
+  m_Mesh: {fileID: -8765397453645777609, guid: e8728c5b7f0eb95428f9d2133d1e3b62, type: 3}
 --- !u!23 &23439703344217616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ Transform:
   - {fileID: 4344759012097426}
   - {fileID: 4578905798691946}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &33503496563510896
 MeshFilter:
@@ -608,7 +608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18437f80657500d41a621f6afc741883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 3
   masage: "\u0422\u0435\u043F\u0435\u0440\u044C, \u043E\u0442\u043A\u0440\u044B\u0442\u043E!"
   masageClose: "\u0414\u0432\u0435\u0440\u044C \u0437\u0430\u043F\u0435\u0440\u0442\u0430.
     \u041D\u0443\u0436\u0435\u043D \u041A\u041B\u042E\u0427"
@@ -1118,7 +1117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18437f80657500d41a621f6afc741883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 3
   masage: "\u0422\u0435\u043F\u0435\u0440\u044C, \u043E\u0442\u043A\u0440\u044B\u0442\u043E!"
   masageClose: "\u0414\u0432\u0435\u0440\u044C \u0437\u0430\u043F\u0435\u0440\u0442\u0430.
     \u041D\u0443\u0436\u0435\u043D \u041A\u041B\u042E\u0427"
